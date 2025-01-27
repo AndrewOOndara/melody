@@ -38,22 +38,22 @@ const Footer: React.FC = () => {
               <h4 className="text-lg font-bold mb-4">Main Menu</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="/" className="text-gray-400 hover:text-teal-300">
+                  <a href="/" className="text-gray-400  ">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="text-gray-400 hover:text-teal-300">
+                  <a href="/about" className="text-gray-400  ">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="/services" className="text-gray-400 hover:text-teal-300">
+                  <a href="/services" className="text-gray-400  ">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/contact" className="text-gray-400 hover:text-teal-300">
+                  <a href="/contact" className="text-gray-400  ">
                     Contact
                   </a>
                 </li>
@@ -65,17 +65,17 @@ const Footer: React.FC = () => {
               <h4 className="text-lg font-bold mb-4">Personal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="/profile" className="text-gray-400 hover:text-teal-300">
+                  <a href="/profile" className="text-gray-400  ">
                     My Profile
                   </a>
                 </li>
                 <li>
-                  <a href="/orders" className="text-gray-400 hover:text-teal-300">
+                  <a href="/orders" className="text-gray-400  ">
                     My Orders
                   </a>
                 </li>
                 <li>
-                  <a href="/wishlist" className="text-gray-400 hover:text-teal-300">
+                  <a href="/wishlist" className="text-gray-400  ">
                     Wishlist
                   </a>
                 </li>
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
                 <li>
                   <a
                     href="https://facebook.com"
-                    className="text-gray-400 hover:text-teal-300 flex items-center"
+                    className="text-gray-400   flex items-center"
                   >
                     <FaFacebook className="mr-2" />
                     Facebook
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
                 <li>
                   <a
                     href="https://instagram.com"
-                    className="text-gray-400 hover:text-teal-300 flex items-center"
+                    className="text-gray-400   flex items-center"
                   >
                     <FaInstagram className="mr-2" />
                     Instagram
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                 <li>
                   <a
                     href="https://twitter.com"
-                    className="text-gray-400 hover:text-teal-300 flex items-center"
+                    className="text-gray-400   flex items-center"
                   >
                     <FaTwitter className="mr-2" />
                     Twitter
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                 <li>
                   <a
                     href="https://linkedin.com"
-                    className="text-gray-400 hover:text-teal-300 flex items-center"
+                    className="text-gray-400   flex items-center"
                   >
                     <FaLinkedin className="mr-2" />
                     LinkedIn
