@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-montserrat);
 }
 
 @layer base {
@@ -33,6 +34,8 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --font-righteous: 'Righteous', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -60,6 +63,27 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .font-righteous {
+    font-family: var(--font-righteous);
+  }
+  
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  /* .righteous-font{
+    font-family: "Righteous", sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: left;
+    color: #121212;
+  }
+  .monserrat-font{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    color: #121212;
+  } */
 }
 
 @layer base {
