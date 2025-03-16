@@ -32,8 +32,8 @@ const carouselItems = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-montserrat">
-      <section className="py-20 px-8 bg-background">
+    <div className="min-h-screen font-montserrat" style={{ background: "rgba(255, 251, 240, 1)" }}>
+      {/* <section className="py-20 px-8 bg-background">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-6">About Melody</h1>
           <p className="text-lg text-muted-foreground">
@@ -41,48 +41,181 @@ export default function Home() {
             for creators and publishers to collaborate.
           </p>
         </div>
-      </section>
+      </section> */}
       
-      <section className="py-20 px-8 bg-secondary">
+      <section className="py-20 px-8">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="min-h-[400px] flex flex-col">
-              <CardHeader>
-                <div className = "righteous-font">
-                  <CardTitle>Tracking Portal</CardTitle>
-                </div>
-                
-                <CardDescription>
-                  Monitor your music rights and licensing in real-time
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground monserrat-font" >
-                  Access comprehensive analytics and tracking tools for your music portfolio.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className = "righteous-font">
-                  <CardTitle>Submission Tools</CardTitle>
-                </div>
-                <CardDescription>
-                  Streamline your music submission process
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Easy-to-use tools for submitting and managing your music catalog.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="h-[500px] w-[540px] mx-auto relative">
+              <Image 
+                src="/public/DudeSmiling.png" 
+                alt="Music collaboration" 
+                fill 
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div className="h-[500px] w-[540px] mx-auto relative">
+              <Image 
+                src="/public/TitleCCC.png" 
+                alt="Music creation" 
+                fill 
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <p className="text-lg mb-8">Discover and connect with local artists in your area.</p>
+            
+            <div className="flex justify-center gap-16">
+              <div className="text-center">
+                <h3 className="text-3xl font-bold">10k+ Artists</h3>
+              </div>
+              <div className="text-center">
+                <h3 className="text-3xl font-bold">1k+ Collabs</h3>
+              </div>
+              <div className="text-center">
+                <h3 className="text-3xl font-bold">100k+ Streams</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
+      
       <section className="py-20 px-8">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="flex flex-col items-center text-center">
+              <div className="h-[200px] w-[200px] relative mb-6">
+                <Image 
+                  src="/public/Create.png" 
+                  alt="Create" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col items-center mb-6">
+                {["C","R","E","A","T","E"].map((letter, index) => (
+                  <span key={index} className="text-2xl font-bold">{letter}</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground">
+                Focus on creating your music and being yourself. We'll handle everything from licensing to generating revenue. We want you to focus on your craft and getting your music out there.
+              </p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="h-[200px] w-[200px] relative mb-6">
+                <Image 
+                  src="/public/Connect.png" 
+                  alt="Connect" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col items-center mb-6">
+                {["C","O","N","N","E","C","T"].map((letter, index) => (
+                  <span key={index} className="text-2xl font-bold">{letter}</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground">
+                Find and connect with professionals across the entertainment industry, from filmmakers to advertisers.
+              </p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="h-[200px] w-[200px] relative mb-6">
+                <Image 
+                  src="/public/Collaborate.png" 
+                  alt="Collaborate" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col items-center mb-6">
+                {["C","O","L","L","A","B"].map((letter, index) => (
+                  <span key={index} className="text-2xl font-bold">{letter}</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground">
+                Work together to craft your music for filmmakers and iterate based on effective feedback. We'll also provide our input to help you improve and succeed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-20">
+        <div className="w-full h-[10px]" style={{ background: "rgba(212, 93, 67, 1)" }}></div>
+        <Image src="/RedDash.png" alt="Red Dash" width={1000} height={1000} className="w-full h-auto mt-5 mb-5" />
+        <div className="container mx-auto px-8 pt-10">
+          <div className="mb-16">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Are You Getting Enough Out of Your Music?</h2>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-lg text-muted-foreground">
+                  Royalties are not enough for musicians these days, and it is extremely difficult for them to find opportunities to improve their talents, either through collaboration with others or through real-world opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mb-16">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-lg text-muted-foreground">
+                  Foster collaboration amongst musicians and provide them with revenue generating opportunities to help them turn dreams into reality
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mb-16">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Solution</h2>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-lg text-muted-foreground">
+                  Provide a platform for musicians to connect with those in need of their skill sets, presenting them with both collaborative and lucrative opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image src="/RedDash.png" alt="Red Dash" width={1000} height={1000} className="w-full h-auto" />
+        <div className="w-full h-[10px] mt-5 mb-5" style={{ background: "rgba(212, 93, 67, 1)" }}></div>
+      </section>
+      
+      {/* <footer className="py-12 px-8 bg-background">
+        <div className="container mx-auto">
+          <div className="flex flex-wrap justify-between items-center">
+            <div className="mb-6 md:mb-0">
+              <h2 className="text-3xl font-bold">melody</h2>
+            </div>
+            <div className="flex flex-wrap gap-8">
+              <a href="#" className="hover:text-primary">Events</a>
+              <a href="#" className="hover:text-primary">Podcast</a>
+              <a href="#" className="hover:text-primary">About</a>
+              <a href="#" className="hover:text-primary">Contact</a>
+              <a href="#" className="hover:text-primary">Log In</a>
+            </div>
+            <div className="mt-6 md:mt-0 flex gap-4">
+              <button className="bg-primary text-white px-6 py-2 rounded-md">Join</button>
+              <button className="border border-primary px-6 py-2 rounded-md">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </footer> */}
+    </div>
+  );
+}
+{/* <section className="py-20 px-8">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center righteous-font">
           Simplifying the Licensing Process
@@ -111,7 +244,4 @@ export default function Home() {
           </Carousel>
         </div>
       </div>
-    </section>
-    </div>
-  );
-}
+    </section> */}
