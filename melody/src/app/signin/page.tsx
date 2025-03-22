@@ -31,7 +31,11 @@ function Page() {
             const user = await signInWithGoogle();
             console.log('User successfully signed in:', user);
         } catch (error) {
-            console.error('Google Sign-In error:', error.message);
+            if (error instanceof Error) {
+                console.error('Google Sign-In error:', error.message);
+            } else {
+                console.error('Unknown error occurred during sign-in');
+            }
         }
     };
 

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
-import useEmblaCarousel from 'embla-carousel-react'
 
 const carouselItems = [
     {
@@ -29,19 +28,29 @@ const carouselItems = [
     }
 ];
 
-
 export default function Home() {
     return (
         <div className="min-h-screen font-montserrat">
             <section className="py-20 px-8 bg-background">
-
                 <div className="min-h-screen">
                     <section className="py-20 px-8 bg-background">
                         <div className="container">
                             {/* Image Container */}
                             <div className="flex gap-[200px] justify-center">
-                                <img src="/Landing_Page_Title.png" alt="Description 2" className="w-[540px] h-[469px]" />
-                                <img src="/Landing_Page_Pic.png" alt="Description 1" className="w-[540px] h-[469px]" />
+                                <Image
+                                    src="/Landing_Page_Title.png"
+                                    alt="Description 2"
+                                    className="w-[540px] h-[469px]"
+                                    width={540}
+                                    height={469}
+                                />
+                                <Image
+                                    src="/Landing_Page_Pic.png"
+                                    alt="Description 1"
+                                    className="w-[540px] h-[469px]"
+                                    width={540}
+                                    height={469}
+                                />
                             </div>
                         </div>
                     </section>
@@ -74,8 +83,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section>
 
+            <section>
                 <div className="container mx-auto text-center py-20">
                     {/* Heading */}
                     <h2 className="text-3xl font-bold mb-10">Our Features</h2>
@@ -84,24 +93,38 @@ export default function Home() {
                     <div className="flex justify-center gap-12">
                         {/* Feature 1 */}
                         <div className="">
-                            <img src="/Create.png" alt="Feature 1" className="w-[315px]" />
+                            <Image
+                                src="/Create.png"
+                                alt="Feature 1"
+                                className="w-[315px]"
+                                width={315}
+                            />
                             <p className="mt-4 text-lg font-semibold">Easy Music Licensing</p>
                         </div>
 
                         {/* Feature 2 */}
                         <div className="">
-                            <img src="/Connect.png" alt="Feature 2" className="w-[279px] h-auto" />
+                            <Image
+                                src="/Connect.png"
+                                alt="Feature 2"
+                                className="w-[279px] h-auto"
+                                width={279}
+                            />
                             <p className="mt-4 text-lg font-semibold">AI-Powered Song Matching</p>
                         </div>
 
                         {/* Feature 3 */}
                         <div className="">
-                            <img src="/Collaborate.png" alt="Feature 3" className="w-[324px] h-auto" />
+                            <Image
+                                src="/Collaborate.png"
+                                alt="Feature 3"
+                                className="w-[324px] h-auto"
+                                width={324}
+                            />
                             <p className="mt-4 text-lg font-semibold">Direct Artist Collaboration</p>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <section className="py-20 px-8 ">
@@ -118,7 +141,7 @@ export default function Home() {
                                 </CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-muted-foreground monserrat-font" >
+                                <p className="text-muted-foreground monserrat-font">
                                     Access comprehensive analytics and tracking tools for your music portfolio.
                                 </p>
                             </CardContent>
