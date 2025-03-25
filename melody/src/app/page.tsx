@@ -4,31 +4,29 @@ import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
-import useEmblaCarousel from 'embla-carousel-react'
 
 const carouselItems = [
-  {
-    title: "Rights Management",
-    description: "Easily manage and track your music rights in one place"
-  },
-  {
-    title: "Automated Licensing",
-    description: "Streamline your licensing workflow with automation"
-  },
-  {
-    title: "Analytics Dashboard",
-    description: "Get insights into your music performance and licensing"
-  },
-  {
-    title: "Royalty Tracking",
-    description: "Monitor and manage your royalty payments"
-  },
-  {
-    title: "Collaboration Tools",
-    description: "Work seamlessly with other creators and publishers"
-  }
+    {
+        title: "Rights Management",
+        description: "Easily manage and track your music rights in one place"
+    },
+    {
+        title: "Automated Licensing",
+        description: "Streamline your licensing workflow with automation"
+    },
+    {
+        title: "Analytics Dashboard",
+        description: "Get insights into your music performance and licensing"
+    },
+    {
+        title: "Royalty Tracking",
+        description: "Monitor and manage your royalty payments"
+    },
+    {
+        title: "Collaboration Tools",
+        description: "Work seamlessly with other creators and publishers"
+    }
 ];
-
 
 export default function Home() {
   return (

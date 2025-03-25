@@ -1,6 +1,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { JSX, SVGProps } from "react"
 
 export default function Header() {
   return (
@@ -75,7 +76,7 @@ export default function Header() {
   )
 }
 
-function GithubIcon(props) {
+function GithubIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -96,7 +97,7 @@ function GithubIcon(props) {
 }
 
 
-function PlayIcon(props) {
+function PlayIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -116,7 +117,7 @@ function PlayIcon(props) {
 }
 
 
-function TwitterIcon(props) {
+function TwitterIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
